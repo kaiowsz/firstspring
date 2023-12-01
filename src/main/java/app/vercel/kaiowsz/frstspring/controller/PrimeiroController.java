@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class PrimeiroController {
     @GetMapping("/first")
-    public String queryParams(@RequestParam String id) {
-        return "método query params retornando: " + id;
+    public String first(@RequestParam String id) {
+        return "First route: " + id;
     }
 
 
